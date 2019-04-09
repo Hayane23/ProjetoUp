@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    font-family: 'Exo 2', 'Exo', sans-serif;
+}
+
+a{
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body>header{
+    height: 80px;
+    padding: 0px 2em;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-color: white;
+}
+
+h1{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 20px;
+}
+
+#notas img{
+    width: 18px;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    padding-top: 80px;
+    background-color: #5f259f;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,.2);
+    box-shadow: 0 0 7px rgba(0,0,0,.2);
+}
+
+.sidebar a{
+    padding: 15px;
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sidebar a, .sidebar a:after {
+    background-color: rgba(255,255,255,.1);
+}
+
+.sidebar a:not(:last-child)::before {
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+    height: 1px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.12);
+}
+.sidebar a:after, .sidebar a:not(:last-child)::before {
+    position: absolute;
+    content: '';
+}
+
+body>section {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    left: 200px;
+    width: -webkit-calc(100% - 200px);
+    width: calc(100% - 200px);
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.box {
+    margin: 0 0 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    position: relative;
+}
+/* inicio barra lateral */
+
+section .box aside:first-child{
+    width: 26vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+#header-aside{
+    width: 90%;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid gray;
+}
+
+.avatar{
+    width: 60px;
+    height: 60px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+#dominio{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+#seletores-calendar{
+    width: 100%;
+    height: 16em;
+}
+
+.calendario{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mes-ano{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#mes{
+    text-transform: uppercase;
+}
+
+.dias{
+    width: 85%;
+    height: 80%;
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
+.acoes{
+    width: 85%;
+    height: 8em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acoes button{
+    width: auto;
+    height: 35px;
+    margin: 5px;
+    padding: 0 8px;
+    border: none;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.8em;
+    
+}
+
+.venc{
+    background-image: linear-gradient(to bottom right,#fa095a, #be4b99);
+    box-shadow: 2px 2px #701c56;
+    border-radius: 15px;
+}
+
+.taref{
+    background-image: linear-gradient(to bottom right,#fbeb22, #ed2124);
+    box-shadow: 2px 2px #8f0c0e;
+    border-radius: 15px;
+}
+
+.reun{
+    color: white;
+    background-image: linear-gradient(to bottom right,#0cbfbd, #5433fe);
+    box-shadow: 2px 2px #13145a;
+    border-radius: 15px;
+}
+
+.extreme{
+    color: white;
+    background-image: linear-gradient(to bottom right,#6dd5ee, #2192b0);
+    box-shadow: 2px 2px #0f5264;
+    border-radius: 15px;
+}
+
+.more{
+    background-image: linear-gradient(to bottom right,#ece678, #ffa851);
+    box-shadow: 2px 2px #8b5117;
+    font-weight: bold;
+    text-shadow: 1px 0.4px gray;
+    border-radius: 10px;
+}
+/* fim barra lateral */
+
+#container-secundario {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68%;
+    height: 100%;
+}
+
+section .calendario nav:first-child{
+    width: 100%;
+    height: 6em;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
