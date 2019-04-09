@@ -187,7 +187,6 @@ section .box aside:first-child{
     color: white;
     font-family: 'Exo 2', sans-serif;
     font-size: 0.8em;
-    
 }
 
 .venc{
@@ -240,4 +239,18 @@ section .calendario nav:first-child{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.calendario nav div a button, .calendario nav button{
+    background-color: #0cbfbc00;
+    box-shadow: 2px 2px 2px gray;
+    color: gray;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    cursor: pointer;
+}
+
+.calendario nav div a button:focus, .calendario nav button:focus{
+    color: rgb(92, 92, 92);
+    box-shadow: 1px 1px 2px gray;
+    font-weight: bold;
 }
