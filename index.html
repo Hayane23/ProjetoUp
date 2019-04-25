@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Exo|Exo+2" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    <!--[if lt IE 9]> -->
-    <!-- <script src="js/html5shiv.js"></script> -->
-    <!--[endif]-->
-    <title>Document</title>
+    <title>Calendario</title>
 </head>
 <body>
     <header>
@@ -49,62 +46,10 @@
                 </header>
                 <section id="seletores-calendar">
                     <div class="calendario">
-                        <div class="mes-ano">
-                            <span><</span>
-                            <p id="mes"></p>
-                            <p id="ano"></p>
-                            <span>></span>
-                        </div>
-                        <div class="dias">
-                            <div class="domingo">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
-                            <div class="segunda">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
-                            <div class="terca">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
-                            <div class="quarta">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
-                            <div class="quinta">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
-                            <div class="sexta">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
-                            <div class="sabado">
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                                <p class="dia"></p>
-                            </div>
+                        <div class="calendar-wrapper">
+                            <button id="btnPrev" type="button">Prev</button>
+                            <button id="btnNext" type="button">Next</button>
+                            <div id="divCal"></div>
                         </div>
                     </div>
                 </section>
