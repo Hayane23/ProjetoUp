@@ -310,21 +310,3 @@ section .calendario nav:first-child{
     box-shadow: 1px 1px 2px gray;
     font-weight: bold;
 }
-
-
-/* editores dos container de data */
-
-.today{
-    border-radius: 50%;
-    padding: 3px;
-    background-color: #5f259f;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.not-current{
-    color: #80808091;
-}

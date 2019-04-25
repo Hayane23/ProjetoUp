@@ -1,0 +1,83 @@
+
+/* editores dos container de data */
+
+.calendar-wrapper {
+    width: 310px;
+    height: 260px;
+    border: 1px solid rgb(220,220,255);
+    border-radius: 5px;
+    background: #fff;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    border-collapse: collapse;
+    color: #444;
+}
+
+thead td {
+    border:none;
+    color:rgb(40,40,59);
+    text-transform:uppercase;
+    font-size:1.5em;
+}
+
+/* #btnPrev {
+    float:left;
+    margin-bottom:20px;
+}
+#btnNext {
+    float:right;
+    margin-bottom:20px;
+} */
+
+#btnPrev, #btnNext {
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:1em;
+    color:#c0c0c0;
+    cursor:pointer;
+    font-family:"Roboto Condensed", sans-serif;
+    text-transform:uppercase;
+    transition:all 0.3s ease;
+}
+
+#btnPrev:hover, #btnNext:hover {
+    color:rgb(40,40,59);
+    font-weight:bold;
+}
+
+td {
+    height:35px;
+    width: 45px;
+    text-align:center;
+    vertical-align:middle;
+    border-right:1px solid rgb(220,220,255);
+    border-top:1px solid rgb(220,220,255);
+}
+
+.not-current{
+    color: #80808091;
+}
+
+td.not-current {
+    color:#c0c0c0;;
+}
+td.normal{
+    font-weight:700;
+    color:rgb(40,40,59);
+    font-size:1.5em;
+}
+
+td.today{
+    border-radius: 50%;
+    background-color: #5f259f;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
