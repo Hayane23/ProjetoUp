@@ -21,29 +21,29 @@ let cal = function(divId) {
   
 };
 
-// Vai para o próximo mês
-cal.prototype.nextMonth = function() {
-  if ( this.currMonth == 11 ) {
-    this.currMonth = 0;
-    this.currYear = this.currYear + 1;
-  }
-  else {
-    this.currMonth = this.currMonth + 1;
-  }
-  this.showcurr();
-};
+// // Vai para o próximo mês
+// cal.prototype.nextMonth = function() {
+//   if ( this.currMonth == 11 ) {
+//     this.currMonth = 0;
+//     this.currYear = this.currYear + 1;
+//   }
+//   else {
+//     this.currMonth = this.currMonth + 1;
+//   }
+//   this.showcurr();
+// };
 
-// Vai para o mês anterior
-cal.prototype.previousMonth = function() {
-  if ( this.currMonth == 0 ) {
-    this.currMonth = 11;
-    this.currYear = this.currYear - 1;
-  }
-  else {
-    this.currMonth = this.currMonth - 1;
-  }
-  this.showcurr();
-};
+// // Vai para o mês anterior
+// cal.prototype.previousMonth = function() {
+//   if ( this.currMonth == 0 ) {
+//     this.currMonth = 11;
+//     this.currYear = this.currYear - 1;
+//   }
+//   else {
+//     this.currMonth = this.currMonth - 1;
+//   }
+//   this.showcurr();
+// };
 
 // Mostra o mês atual
 cal.prototype.showcurr = function() {
